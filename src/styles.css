@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Barlow";
+  src: url("../src/fonts/Barlow/Barlow-Regular.ttf");
+}
+
+@font-face {
+  font-family: "BarlowMedium";
+  src: url("../src/fonts/Barlow/Barlow-Medium.ttf");
+}
+
+@font-face {
+  font-family: "BarlowLight";
+  src: url("../src/fonts/Barlow/Barlow-Light.ttf");
+}
+
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url("fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "BarlowCondensedBold";
+  src: url("../src/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}

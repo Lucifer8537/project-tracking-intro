@@ -1,0 +1,67 @@
+.header-container {
+  font-family: "BarlowCondensed";
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  background-color: transparent;
+  padding: 50px 0px;
+  align-items: center;
+  font-weight: 700;
+  position: relative;
+}
+.logo {
+}
+
+.nav-container {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot {
+  width: 5px;
+  background-color: hsl(231, 7%, 65%);
+  height: 5px;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+.login {
+  color: hsl(231, 7%, 65%);
+}
+
+@media (min-width: 679px) {
+  .nav {
+    cursor: pointer;
+  }
+  .nav:hover,
+  .login:hover {
+    text-decoration: underline;
+  }
+  .login {
+    cursor: pointer;
+  }
+}
+@media (max-width: 678px) {
+  .popup-menu-container {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    padding: 7% 5%;
+    bottom: -160%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 50px -20px black;
+  }
+  .nav {
+    font-family: "BarlowCondensedBold";
+    font-size: 150%;
+    color: hsl(230, 29%, 20%);
+    padding-bottom: 7%;
+  }
+  .login {
+    font-family: "BarlowCondensedBold";
+    font-size: 150%;
+    border-top: 1px solid hsl(231, 7%, 65%);
+    padding-top: 5%;
+  }
+}

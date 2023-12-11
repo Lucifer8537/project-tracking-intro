@@ -1,0 +1,33 @@
+.container {
+  height: 100%;
+  width: 80%;
+  background-color: transparent;
+  background-image: url("../assets/illustration-devices.svg");
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-attachment: fixed;
+  background-position: calc(100% + 265px) 60%;
+  position: relative;
+  padding: 0px 10%;
+}
+.bg-container {
+  position: absolute;
+  width: 46%;
+  height: 50%;
+  background-color: hsl(207, 33%, 95%);
+  z-index: -1;
+  right: 0;
+  top: 0;
+  border-radius: 0px 0px 0px 70px;
+}
+@media (max-width: 678px) {
+  .container {
+    background-size: 137%;
+    background-position: 0% 25%;
+    background-attachment: scroll;
+  }
+  .bg-container {
+    width: 50%;
+    height: 55%;
+  }
+}

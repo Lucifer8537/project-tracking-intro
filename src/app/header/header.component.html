@@ -1,0 +1,22 @@
+<div class="header-container">
+  <img src="../../assets/logo.svg" alt="logo" class="logo" />
+  <div *ngIf="!mobileView" class="nav-container">
+    <ng-container *ngFor="let nav of navigator">
+      <div class="nav">{{ nav }}</div>
+    </ng-container>
+    <div class="dot"></div>
+    <div class="login">{{ login }}</div>
+  </div>
+  <img
+    src="{{ btnSrc }}"
+    *ngIf="mobileView"
+    class="menu-container"
+    (click)="menuClick()"
+  />
+  <div *ngIf="menu" class="popup-menu-container">
+    <ng-container *ngFor="let nav of navigator">
+      <div class="nav">{{ nav }}</div>
+    </ng-container>
+    <div class="login">{{ login }}</div>
+  </div>
+</div>
